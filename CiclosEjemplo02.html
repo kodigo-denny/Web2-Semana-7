@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let par = 0, suma_par = 0, impar = 0, suma_impar = 0, num
+
+        for(let i = 1; i <= 5; i++){
+            num = Number(prompt(i+". Ingrese un numero: "))
+            if(num%2 == 0){
+                par++
+                suma_par = suma_par + num
+            }
+            else{
+                impar++
+                suma_impar = suma_impar + num
+            }
+        }
+        alert("Cantidad de pares: " + par)
+        alert("Promedio de pares: " + suma_par/par)
+        alert("Cantidad de impares: " + impar)
+        alert("Promedio de impares: " + suma_impar/impar)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
